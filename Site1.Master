@@ -1,0 +1,30 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Segundo_parcial_DAI5_Franco_Orazietti.Site1" %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>My Web Application</title>
+    <link rel="stylesheet" type="text/css" href="Styles.css" />
+        <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+         <div class="container">
+        <div>
+            <nav>
+                <ul>
+                    <li><a href="Registro.aspx">Registro</a></li>
+                    <li><a href="GestiondeArchivos.aspx">Gestión de Archivos</a></li>
+                </ul>
+            </nav>
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder>
+        </div>
+        <footer>
+            <p>Footer</p>
+        </footer>
+             </div>
+    </form>
+</body>
+</html>
